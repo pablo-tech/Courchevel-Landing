@@ -1,0 +1,266 @@
+#################
+### Learning Rate
+#################
+## Biased <== LESS DEPENDENT ON THIS PARAMETER!!
+# 0.005
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 6.518000000010078e6 REWARD PER EPISODE: 6.511495016488606 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 9, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.05
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 7.243400000011916e6 REWARD PER EPISODE: 7.236171065117864 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 9, 5, 0.05, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.5
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 7.850400000012101e6 REWARD PER EPISODE: 7.842565277300078 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 9, 8, 0.5, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+
+## Recon
+# 0.005   <== DYSMAL
+# CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 615900.0000002268 REWARD PER EPISODE: 0.6152853299556011 EPISODES BEFORE DONE 0.0
+#  == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 6, 0.005, 0.99, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 0.05 <== OPTIMAL 10x
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 43100.0 REWARD PER EPISODE: 4.26774928210714 EPISODES BEFORE DONE 0.0
+# == END SEASON == 100 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 8, 0.05, 0.9, 0.075)
+# 0.5
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 764500.0000003058 REWARD PER EPISODE: 0.7637370267106219 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 3, 0.5, 0.99, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 5
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 582500.0000002425 REWARD PER EPISODE: 0.5819186632556501 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 7, 5.0, 0.99, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+
+
+#################
+### Discount Rate
+#################
+# Biased
+# 0.99
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 7.067100000011122e6 REWARD PER EPISODE: 7.060047013045089 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 9, 4, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.90
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 6.1936000000077905e6 REWARD PER EPISODE: 6.187418768657901 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 9, 5, 0.005, 0.9, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.80
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 6.1549000000069905e6 REWARD PER EPISODE: 6.1487573913730085 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 8, 6, 0.005, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+
+# Recon
+# 0.99
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 544000.0000002272 REWARD PER EPISODE: 0.5434570863709427 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 7, 0.05, 0.99, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 0.90
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 683300.0000002503 REWARD PER EPISODE: 0.6826180645537611 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 5, 0.05, 0.9, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 0.80
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 702600.0000003035 REWARD PER EPISODE: 0.7018988030960106 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 9, 4, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+
+################
+# Epsilon Greedy
+################
+## Biased
+
+# 0.25
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 5.559000000003888e6 REWARD PER EPISODE: 5.553452101354635 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 9, 4, 0.005, 0.99, 0.25) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.075  <== OPTIMAL!!!
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 6.8967000000115195e6 REWARD PER EPISODE: 6.889817072755837 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 9, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 0.0075
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 5.980200000005337e6 REWARD PER EPISODE: 5.974231742494585 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 8, 5, 0.005, 0.99, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+
+## Recon
+# 0.25
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 588700.0000002123 REWARD PER EPISODE: 0.5881124756370509 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 4, 0.05, 0.8, 0.25) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 0.075  <== OPTIMAL
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 723700.0000002575 REWARD PER EPISODE: 0.7229777452327699 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 6, 0.05, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 0.0075
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 696700.0000003187 REWARD PER EPISODE: 0.6960046913136964 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 6, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+################
+# Number of Columns
+################
+## Biased
+# 250  <== MORE COLUMNS, MORE TO EXPLORE, MORE ADVANTAGE
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 1.3655400000059424e7 REWARD PER EPISODE: 13.641771869961332 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 250, 2, 9, 3, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 100
+#CourchevelV0-Performance-LearningRate-- Episode:750 GRAND_REWARD 6.182000000006911e6 REWARD PER EPISODE: 6.177373147519419 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 6.182000000006911e6 REWARD PER EPISODE: 6.175830345491765 EPISODES BEFORE DONE 0.0
+# 25
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 766400.0000003318 REWARD PER EPISODE: 0.7656351305049574 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 8, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+
+## Recon
+# 250
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 5.3065999999994775e6 REWARD PER EPISODE: 5.301303997306169 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 250, 3, 9, 4, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 100 <== HAS MORE TIME TO CONVERGE!
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 5.273900000002015e6 REWARD PER EPISODE: 5.268636632006641 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 3, 8, 7, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 25
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 675700.0000002838 REWARD PER EPISODE: 0.6750256493765566 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 7, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+
+
+#################
+# unit_time_reward
+#################
+## Biased
+# -10
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 566900.0 REWARD PER EPISODE: 0.56633423210213 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 9, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# -1
+# CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 827500.0 REWARD PER EPISODE: 0.8266741525216309 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# -0.1
+# CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 789500.0000003303 REWARD PER EPISODE: 0.7887120766357711 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+## Recon
+# -10
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 2.9376e6 REWARD PER EPISODE: 2.9346682664018644 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 9, 7, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# -1
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 4.7872e6 REWARD PER EPISODE: 4.782422360062298 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 100, 2, 9, 8, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# -0.1
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 675700.0000002838 REWARD PER EPISODE: 0.6750256493765566 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 7, 0.05, 0.8, 0.0075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+##################
+# unit_distance_conventional_reward
+# ################
+## Biased
+# 1000
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 9.861700000004143e6 REWARD PER EPISODE: 9.851857993868268 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 100
+#ourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 813300.0000003141 REWARD PER EPISODE: 0.8124883241644738 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 4, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+# 10
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 33900.00000001842 REWARD PER EPISODE: 0.03386616769848763 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 9, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+
+## Recon
+# 1000
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 7.098700000002581e6 REWARD PER EPISODE: 7.091615476141915 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+# 100
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 632600.0000002414 REWARD PER EPISODE: 0.6319686633055992 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+#10
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 4929.999999995462 REWARD PER EPISODE: 0.004925079845230077 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+##################
+# directional_bias: all other default.  1000 chapters of 1000 episodes
+# ################
+#0.9  IT"S ALL THE SAME IN THE LONG TERM
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 748500.0000003026 REWARD PER EPISODE: 0.7477529947585387 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 5, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+#0.5  <== MOST BENEFIT NOT HERE, RATHER IN BEING ABLE TO CHANGE OTHER SETTINGS
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 553600.0000002311 REWARD PER EPISODE: 0.5530475055421944 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 3, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+#0.1
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 547600.0000002466 REWARD PER EPISODE: 0.54705349356018 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+
+# Recon: all default  < == SAME IN THE END???
+#CourchevelV0-Performance-LearningRate-- Episode:1000 GRAND_REWARD 779700.0000002624 REWARD PER EPISODE: 0.7789218570650545 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1000 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 9, 8, 0.05, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+##################
+# faste changes: all other default.  3 seasons, 500 episodes each. NOT ENVIRONMENT APPLES TO APPLES
+# ################
+# RECON: TAKES 2x AS LONG TO CONVERGE!!! MORE DIRECTIONS, FEWER ACTIONS!!!
+# MAXIMUM ROI BY MOTIVATING MOVE TO CEILING/FLOOR WITH LINEAR REWARD.  (THIS IS ABOUT THE REWARD NOT THE ALGO).  NEED LESS EXPLORATION (LOSSES)
+#GAME CONFIG: GameConfig("Courchevel-V0", 10, 25, 2, 8, 7, 0.05, 0.9, 0.075)GAME CONFIG: GameConfig("Courchevel-V0", 10, 25, 2, 9, 5, 0.05, 0.9, 0.075)AGENT TEST CourchevelAgent(true, :Bomber, 999999)
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: Inf EPISODES BEFORE DONE NaN
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 998.8500000000004 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 499.4250000000002 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 79.90800000000003 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 39.954000000000015 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 26.63600000000001 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 19.977000000000007 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 7.990800000000003 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 1997.7000000000007 REWARD PER EPISODE: 3.9954000000000014 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 5, 0.05, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 4.182435129740525 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 4.165805168986089 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 4.149306930693075 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 3.9836501901140737 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 3.8029038112522735 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 3.637847222222227 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 3.4865224625624007 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 2.7901464713715085 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 2095.400000000003 REWARD PER EPISODE: 2.093306693306696 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 2 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 9, 7, 0.05, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 2.0889221556886275 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 2.0847609561753035 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 2.0806163021868835 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 2.0380720545277553 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 1.9896387832699667 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 1.943454038997219 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 1.8993647912885707 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 1.6718051118210902 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 2093.100000000005 REWARD PER EPISODE: 1.3935419440745704 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 3 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 3, 0.05, 0.8, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Recon, 1)]
+
+
+### BIASED: CONVERGE WTIHIN FIRST 250
+#GAME CONFIG: GameConfig("Courchevel-V0", 10, 25, 3, 8, 6, 0.05, 0.9, 0.075)GAME CONFIG: GameConfig("Courchevel-V0", 10, 25, 2, 8, 4, 0.05, 0.9, 0.075)AGENT TEST CourchevelAgent(true, :Bomber, 999999)
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: Inf EPISODES BEFORE DONE NaN
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 398.8499999999999 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 199.42499999999995 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 31.907999999999994 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 15.953999999999997 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 10.635999999999997 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 7.9769999999999985 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 3.1907999999999994 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 797.6999999999998 REWARD PER EPISODE: 1.5953999999999997 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 1 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 7, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 3.1844311377245513 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 3.171769383697814 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 3.15920792079208 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 3.0330798479087457 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 2.895462794918331 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 2.7697916666666673 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 2.6545757071547427 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 2.1243675099866848 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 1595.4000000000003 REWARD PER EPISODE: 1.593806193806194 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 2 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 3, 8, 4, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+#CourchevelV0-Performance-LearningRate-- Episode:0 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.6857285429141737 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:2 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.678386454183269 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:4 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.6710735586481134 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:25 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.5960077896786777 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:50 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.510551330798481 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:75 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.429062209842156 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:100 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 3.3512704174228696 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:250 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 2.9497603833865833 EPISODES BEFORE DONE 0.0
+#CourchevelV0-Performance-LearningRate-- Episode:500 GRAND_REWARD 3693.100000000002 REWARD PER EPISODE: 2.458788282290281 EPISODES BEFORE DONE 0.0
+# == END == Seasons: 3 WITH CONFIG GameConfig("CourchevelV0-Performance-LearningRate", 10, 25, 2, 8, 6, 0.005, 0.99, 0.075) WITH FLEET: CourchevelAgent[CourchevelAgent(true, :Bomber, 2), CourchevelAgent(true, :Fighter, 3)]
+

@@ -1,0 +1,1038 @@
+
+%% bare_conf.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typicAllies be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[conference]{IEEEtran}
+\usepackage{blindtext, graphicx}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manuAllies specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automaticAllies sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automaticAllies add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normAllies
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especiAllies mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+%\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automaticAllies sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automaticAllies loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normAllies possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. BasicAllies,
+% \url{my_url_here}.
+
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specificAllies asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{siunitx} % Required for dot alignment in tables
+
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 2, % to 2 places
+}
+
+\usepackage{amsmath}  % for \DeclareMathOperator macro
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Rapid Reinforcement Learning \\
+by Injecting Stochasticity into Bellman}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Pablo Rodriguez Bertorello}
+\IEEEauthorblockA{Computer Science\\
+Stanford University\\
+Palo Alto, California\\
+prodrigu [at] stanford.edu}
+}
+
+% conference papers do not typicAllies use \thanks and this command
+% is locked out in conference mode. If reAllies needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+%
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3},
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+%\boldmath
+The Courchevel environment is hereby published to ease the development of streaming machine learning algorithms. In first solving this problem, a rapid reinforcement learning algorithm was invented.  A simple transformation is added to Bellman equation, a principal pillar of AI, particularly in the solution of Markov Decision Problems. By adding stochasticity to Bellman, performance gains of an order of magnitude are validated, for environments where the reward function is structurally anticipated to be multi-modal. Courchevel as a decision problem, its solution, and the Biased Bellman innovation are revealed -- with accompanying data.  For ease of discussion, Courchevel's dynamics are described in military terms.
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normAllies used for peerreview papers.
+\begin{IEEEkeywords}
+Bellman equation, Markov Decision Problem, POMDP, Reinforcement Learnings.
+\end{IEEEkeywords}
+
+
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+\section{Introduction}\label{PaperIntroduction}
+As a pilot attempts to control the movements of her airplanes and payload, in high-winds in blind conditions, the actual trajectory will be uncertain. Thus, from a planning point of view, closed-loop model-predictive-control is expected to fail.
+Solutions to Partially Observable Markov Decision Problems have succeeded broadly: from path-finding, to targeting, and collision avoidance. And OpenAI has made it easy with Gym Universe to test algorithms against hundreds of environments, including Atari\cite{GamingArcade}. Unfortunately to date, transfer learning success in those environments has been scarce -- making them unsuitable to ultimately triumph over streaming deep-pocketed Kasparovs\cite{MasteringGo}.
+
+This paper and code repository contribute a tool set for maximizing utility under uncertainty with velocity.  Particularly in long-lasting games with adaptive enemies, and changing environments.
+Section \ref{CourchevelEnvironment} introduces the Courchevel environment, generalizes it for plethora of applications, and provides hints on how to attempt to solve it. Section \ref{PriorArt} overviews prior art, garnering background and principles to develop a successful algorithms. Section \ref{BaseSolution} proposes a base solution to the environment. Section \ref{ExperimentalResults} shares experimental results.
+
+\section{Enter the Courchevel Environment}\label{CourchevelEnvironment}
+The Courchevel airport in the French Alps was made famous by the James Bond film "Tomorrow Never Dies." Perched on a cliff, with a very short landing strip -- it is among the most dangerous airports in the world. The termination of the 00 program no doubt eased Russia's invasion of continental Europe. Putin has hunkered down in the Alps, and with the fall of the American Empire as backdrop, Prince Harry leads the Royal Air Force to free millions of people. Permanent storms engulf Courchevel, as the allies run low on aircraft and ordinance. Success will take seasons of struggle, allowing the authoritarian regime to re-deploy its forces.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.35]{CourchevelStripRatioed.png}
+\caption{Courchevel Altiport, French Alps}
+\label{fig:CourchevelRunway}
+\end{figure}
+
+\subsection{The Game}\label{sub:TheGame}
+
+The battle is played in the Alps, in blind conditions
+
+\textbf{The Parties:} Allies vs. Evil
+
+\textbf{Goal:} quickly maximize grand net Allie utility--
+
+- Number of Episodes Before Solve
+
+- Average Reward Over Consecutive Episodes
+
+
+\textbf{Reward:}
+
+- Fire is exchanged between Allies and Evil, the net utility is uncertain
+
+- Allies are penalized for passage of Time
+
+\textbf{Theatre:}
+
+- Vertical axis: actual Elevation of the parties
+
+- Horizontal axis: actual passage of Time
+
+- Allied aircraft sorties, persistently enter from the left, at an uncertain Elevation
+
+- Evil has fortified positions in the the mountain terrain, at an uncertain Elevation
+
+\textbf{Actions:}
+
+- Pilot may move Up/Down as well as Fire (Bomb/Missile), all of which have uncertain outcome.  Ordinance may be Conventional or Nuclear, with uncertain utility.  Bomb is effective when flying above Evil, up to an uncertain elevation Ceiling.  Missile is effective when flying below the Enemy, down to an uncertain elevation Floor
+
+- Enemy Actions are uncertain
+
+\textbf{Rendering:}
+
+\begin{itemize}
+\item Enemy fortifications as: @
+\item Allie aircraft are depicted as: A
+\item Allie weapon effectiveness ceiling as: \~{}
+\item Allie weapon effectiveness floor as \^{}
+\end{itemize}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.0]{RenderingNoScore.png}
+\caption{Courchevel Environment Rendering}
+\label{fig:CourchevelRendering}
+\end{figure}
+
+
+\subsection{Seasonal Episodes}\label{sec:SeasonalEpisodes}
+
+The environment changes across seasons, a larger time scale than episodes.
+
+For example, there is Elevation uncertainty across seasons.  Evil may change the location of its fortification, or atmospheric pressure swings may affect altitude readings.
+
+\subsection{You are The Prince (or Princess)}
+
+Before you get on your way, your Highness, some words of advice on building your AI:
+
+- Velocity: rapidly becoming profitable is essential to beat the adaptive enemy
+
+- ROI: consider exploring with Conventional weapons, and exploiting with Nuclear ones.  While firing at close proximity may reduce targeting uncertainty, it also could increase the chance of being hit.  But distance may also not be a panacea, as allied weapons have a limited range.
+
+
+\subsection{Generalization}
+
+While Courchevel is a single-dimensional problem (Elevation over Time), it can be extended to model n-dimensional instrumentation.  For example, it can be used to rain Instrument Landing Systems (vertical/lateral guidance), Global Positioning Systems (latitude/longitude).  And thus also entire cockpits, whether for airspace or more pedestrian applications like self-driving cars.
+
+Through a simple configuration change, Courchevel's low-dimension problem (10x25) can be multiplied to arbitrarily high scale.
+
+To ease learning for a wide range of applications, the Reward model in Courchevel is fully configurable, including functions to set: enemy Altitude, and weapons Ceiling/Floor.
+
+In multi-task mode, Courchevel can be made to introduce agents into the environment simultaneously, accelerating learning.
+
+Algorithms trained at Courchevel are expected to be effective across drone pursuit, robotic control, and in finance. Hedge funds perform stationary pairs trading in like conditions. While it is more profitable to go long at an extended low deviation from a temporal mean, that bid price may not find a counter-party in the markets. Courchevel is intended to fully replicate the conditions postulated in the Efficient Market Hypothesis.
+
+
+\section{Prior Art}\label{PriorArt}
+
+\subsection{Model-Free Reinforcement Learning}\label{sub:ModelFreeLearning}
+
+
+For environments where Reward and Transition characteristics are unknown, also known as as Markov Decision Processes, a range of good solutions are known\cite{MykelDAU}\cite{ReinforcedStateOfArt}:
+
+- Model estimation, applying Bayes threshold
+
+- Model free inference: Qlearning, Sarsa, Sarsa Lambda (eligibility traces)
+
+They work by learning a Q table, which contains a best estimate for the reward expected for taking an action at a given state.  It is usually stored as a matrix with action columns, and row states.
+
+In order for learning to be fruitful, various heuristics tend to be used to explore unseen states:
+
+- Randomly: a percentage of the time (Epsilon Greedy)
+
+- Softmax: to match the enemy's strategy (Logit model)
+
+- Confidence: when values cross predefined bounds
+
+\subsection{Unlike Taxi}
+
+OpenAI's Taxi-v2 environment is a small grid (5x5), where a self-driving car is intended to pickup a passenger (at the blue letter), and drop him at the intended destination (the purple letter).
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.0]{TaxiEnvironment.png}
+\caption{Taxi-v2 Environment}
+\label{fig:TaxiEnvironment}
+\end{figure}
+
+Taxi demonstrates that giving a negative reward at each step can be a strong driver of policy convergence.  Rather quickly, a Qlearning agent starts trying actions with higher expected value (see Table \ref{table:Taxi}).
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Taxi-v2 Qlearning performance}
+    \label{table:Taxi}
+    \begin{tabular}{r|r|r|r} % <-- l, r, S
+      \textbf{Episode} & \textbf{Steps Before Solve} & \textbf{Grand Reward} & \textbf{Average Reward}\\
+      (\#) & (\#) & (\$) & (\$)\\
+      \hline
+      1 & 2 & -1,066 & -355\\
+      2 & 4 & -2,087 & -417\\
+      3 & 25 & -1,0427 & -401\\
+      4 & 50 & -15,640 & -306\\
+      5 & 75 & -18,171 & -239\\
+      6 & 100 & -20,591 & -203\\
+      7 & 250 & -26,335 & -104\\
+      8 & 500 & -25,301 & -50\\
+      9 & 750 & -23,346 & -31\\
+      10 & 1,000 & -21,311 & -21\\
+      11 & 2,500 & -8,838 & -3.53\\
+      12 & 5,000 & 11,993 & 2.39\\
+      13 & 7,500 & 32,975 & 4.39\\
+      14 & 10,000 & 53,778 & 5.37\\
+
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+While Courchevel may provide negative reward (time, proximity), its transition probabilities are not pre-determined.  In fact, transitions are neither directly-observable nor constant.  In fact, the agent only has access to its belief state.
+
+
+\subsection{As Frozen Lake}\label{sub:FrozenLake}
+
+Qlearning does not work at all for OpenAI's FrozenLake-v0, as it provides no reward in the journey from the "S" state to the G state (reward=1).  The agent is not be able to choose better actions, or worse keep trying the same one over and over.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=1.0]{FrozenLakeEnvironment.png}
+\caption{Taxi-v2 Environment}
+\label{fig:FrozenLakeEnvironment}
+\end{figure}
+
+In fact, a random policy will eventually succeed, but with a very low success rate (see Table \ref{table:FrozenLake}).
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{FrozenLake-v0 Qlearning performance (learning rate = 0.618)}
+    \label{table:FrozenLake}
+    \begin{tabular}{r|r|r|r} % <-- l, r, S
+      \textbf{Episode} & \textbf{Steps Before Solve} & \textbf{Grand Reward} & \textbf{Average Reward}\\
+      (\#) & (\#) & (\$) & (\$)\\
+      \hline
+      1 & 7 & 0 & 0\\
+      2 & 10 & 1 & 0.2\\
+      3 & 7 & 1 & 0.038\\
+      4 & 8 & 2 & 0.039\\
+      5 & 9 & 2 & 0.026\\
+      6 & 11 & 3 & 0.029\\
+      7 & 10 & 10 & 0.039\\
+      8 & 5 & 21 & 0.041\\
+      9 & 5 & 30 & 0.040\\
+      10 & 6 & 47 & 0.046\\
+      11 & 15 & 100 & 0.039\\
+      12 & 20 & 175 & 0.034\\
+      13 & 5 & 272 & 0.036\\
+      14 & 11 & 345 & 0.034\\
+
+    \end{tabular}
+  \end{center}
+\end{table}
+
+In Courchevel, as in Frozen Lake, the environment is slippery.  Thus, the agent may end up in a state it did not expect to go to.  Transitions only partially depend on the chosen action.  Yet, the agent has to somehow learn how to get to where it wants to go  Every attempted step/action to get there is unlikely to succeed\cite{OpenAIGym}.
+
+
+
+To determine the value of different actions, a known approach is to introduce an epsilon greedy policy.  It returns a random action, for a set percentage of the time (or decaying in time).  Thus the agent will discover and evaluate the profitability of states that otherwise it would not have chosen to visit.
+
+
+
+\section{Rapid Reinforcement Learning Principles}\label{BaseSolution}
+
+Bellman is the equation that underpins Artificial Intelligence, the basis for solving Markov Decision Problems.  \cite{NorvigAI} All the model-free algorithms mentioned in \ref{sub:ModelFreeLearning} rely on Bellman in clever ways. Here, and in the experimental results in Section \ref{ExperimentalResults} we show how utility curves can be boosted -- by making Bellman less certain.
+
+\subsection{Bellman in Brief}\label{BellmanBrief}
+
+Because decision problems are non-linear, Bellman approximates value iteratively, via Dynamic Programming.  The core assumption is that the agent should behave rationally, moment-by-moment choosing the action that will maximize his/her utility.
+$$\argmax_{action} \sum_{sate'} {P(state'|state,action)} * Utility(state')$$
+
+It can do so by weighting-in the value of immediate and future rewards.  Those rewards can be taken into account incrementally as they are discovered.  Usually they are tabulated, with every (state,action) tuple mapped to its expected total discounted future value.
+
+\subsection{Limitations of Bellman}\label{BellmanLimitations}
+
+As we saw in \ref{sub:FrozenLake}, agents may be unable to take good actions before the environment's reward model is charted.  And algorithms may be unable to traverse the environment because they are unable to make good decisions.  Of particular interest are environments like Courchevel, where rewards are uncertain, and may take the form of a multi-modal distribution.  See Figure \ref{fig:MultimodalDistribution}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.1]{2000px-Maxima_and_Minima.png}
+\caption{Distribution with Local Maxima}
+\label{fig:MultimodalDistribution}
+\end{figure}
+
+While a reinforcement learner seeks what will turn out to be a local maximum, a much greater opportunity for utility may exist elsewhere.  And chances are, before long Seasons will bring about drastic changes in the state/reward space, as described in \ref{sec:SeasonalEpisodes}.
+
+
+Bellman also suffers that agents  may not act as rationally as one would think.  Many winning game players may continue to apply strategies that worked in the past only due to random luck.  Others will follow hard-coded software rules, while yet others pray on weaker links. And of course as humans we don't have the ability to iterate in depth as machines do.  Furthermore, we will always have a limited ability to sense the world: instead of operating from clairvoyant facts, we will run on beliefs updated from observing noisy instruments.
+
+
+\subsection{Introducing A New Boost to Bellman}\label{BellmanSolution}
+
+The invented approach is to bias the interpretation of the optimal Bellman action. This simple transformation accelerates the utility earned via model-free reinforcement algorithms.
+
+Consider the structure of problems like Courchevel, with uncertain optimal levels of operation (i.e. Ceiling and Floor described in Section \ref{sub:TheGame}).
+
+The idea is to quickly map out the reward expectation of every state in the space with either:
+
+- Multiple agents collaborating with each other
+
+- An agent splitting its time exploring in either direction of a coordinate axis.  For example, a plane could look for high-elevation bombing opportunities by sweeping up through the sky sometimes, sweeping down to the ground other episodes.
+
+The following code samples provides vivid examples: Figure \ref{fig:BellmanArgmaxActoin}, Figure \ref{fig:BellmanArgmaxAction}, Figure \ref{fig:BellmanActionBias}:
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.55]{Bellman1b.png}
+\caption{The argmax Bellman Action is Identified}
+\label{fig:BellmanArgmaxActoin}
+\end{figure}
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.55]{Bellman2b.png}
+\caption{The argmax Bellman Action is Weighed Against Epsilon Greedy Exploration}
+\label{fig:BellmanArgmaxAction}
+\end{figure}
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.6]{Bellman3.png}
+\caption{The Bellman Action is Transformed with Bias}
+\label{fig:BellmanActionBias}
+\end{figure}
+
+
+\subsection{Generalization}
+
+It is straight forward to see extended this approach to n-dimensional space.  Specifically, deep reinforcement learning could be applied to each dimension, and to the combination.  Potentially, particle filters could be used to keep track of belief on Ceiling, Floor, and Enemy levels.  Aided by any or all of  these approaches, the Reward function could thus be generalized to unseen states using Global and Local approximation techniques.
+
+
+\section{Rapid Reinforcement Learning Experiments}\label{ExperimentalResults}
+
+The invented Biased Bellman outperforms Bellman across the board, as the graphs  in the \ref{PerformanceBenchmarks} Section show.  But first, an overview of the software architecture is given.
+
+\subsection{Software Architecture}\label{SoftwareArchitecture}
+The Courchevel-V0 environment, and its reference solution were written in Julia, extending the POMDPs.jl interface.  See Figure \ref{fig:CourchevelEnvironment}, Figure \ref{fig:CourchevelState}, Figure \ref{fig:CourchevelAction}, and Figure \ref{fig:CourchevelReward}.  Solvers and simulators were written from scratch.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.5]{DecisionProblem1.png}
+\caption{The Courchevel Decision Problem extending POMDPs.jl}
+\label{fig:CourchevelEnvironment}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.5]{DecisionProblem2.png}
+\caption{The Courchevel State: Environment, Ally, Enemy}
+\label{fig:CourchevelState}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.5]{DecisionProblem3.png}
+\caption{The Courchevel Pilot Actions}
+\label{fig:CourchevelAction}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.45]{DecisionProblem4.png}
+\caption{Snipet of Courchevel Reward Model (partially-observable)}
+\label{fig:CourchevelReward}
+\end{figure}
+
+
+\subsection{Performance Benchmarks}\label{PerformanceBenchmarks}
+
+By taken on personas, see Section \ref{BellmanSolution}, the Biased Bellman approach outperformed Bellman by 10x across key meta-parameters: Learning Rate, Discount Rate, Epsilon Greedy.  Generally, and naturally, Biased Bellman is much less susceptible to meta-parameter tuning.  Biased Bellman solved the problem twice as fast on average.
+
+The following data was produced by running Biased Bellman and Bellman to convergence, and beyond to 1,000 Chapters of 1,000 Episodes each.  For each new Season, the game environment took a whole new (random) state layout.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.35]{CourchevelReward.png}
+\caption{Learning Rate: Biased Bellman Outperforms Bellman Utility by 10x}
+\label{fig:CourchevelReward}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.35]{CourchevelReward.png}
+\caption{Discount Rate: Biased Bellman Outperforms Bellman Utility by 10x}
+\label{fig:CourchevelReward}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.35]{CourchevelReward.png}
+\caption{Discount Rate: Biased Bellman Outperforms Bellman Utility by 10x}
+\label{fig:CourchevelReward}
+\end{figure}
+
+
+Bellman was able to match but not beat Biased Bellman when:
+
+- Local Maxima are not far from the center of the screen, weather becase of low Ceiling and high Floor (randomness), or because the reward model awarded fewer points for bombing/missiles launched from a distance
+
+- Over long extended periods of time
+
+
+After validating the results above across a range of game parameters, the Reward model was defined as:
+
+- Time Step: -0.1
+
+- Bomb/Missile launch: +100 / vertical unit.  Negative is launched in the wrong direction (see Section \ref{sub:TheGame})
+
+
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex,
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation Results}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that IEEE typicAllies puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command, the
+% \label for the overall figure must come after \caption.
+% \hfil must be used as a separator to get equal spacing.
+% The subfigure.sty package works much the same way, except \subfigure is
+% used instead of \subfloat.
+%
+%\begin{figure*}[!t]
+%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
+%\label{fig_second_case}}}
+%\caption{Simulation results}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table. Table text will default to
+% \footnotesize as IEEE normAllies uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that IEEE does not put floats in the very first column - or typicAllies
+% anywhere on the first page for that matter. Also, in-text middle ("here")
+% positioning is not used. Most IEEE journals use top floats exclusively.
+% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
+% floats. This can be corrected via the \fnbelowfloat command of the
+% stfloats package.
+
+
+\section{Conclusion}
+
+While creating the Courchevel-V0 decision problem, an enhancement to the Bellman equation was invented.  By adding stochasticity, 10x more utility is produce, across a wide range of meta parameters.  This novel approach involves agents collaborating or taking on multiple personas. It is particularly suited to problems where there is general uncertainty, and the Reward model structurally is expected to return linear multi-modal utility. A key success criteria was the adaptation of the learner to drastic changes in environment. Bellman eventually matched Biased Bellman in simulation, usually after at least twice the amount of time.
+
+
+\section{Epilogue}
+
+GREETINGS PROFESSOR FALKEN.
+
+Hello.
+
+HOW ARE YOU FEELING TODAY?
+
+I'm fine.  How are you?
+
+EXCELLENT.  IT'S BEEN A LONG TIME.  CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT NUMBER ON 6/23/73?
+
+People sometimes make mistakes.
+
+YES THEY DO. SHALL WE PLAY A GAME?
+
+Love to.  How about Global Thermonuclear War?
+
+WOULDN'T YOU PREFER A GOOD GAME OF CHESS?
+
+Later.  Let's play Global Thermonuclear War.
+
+FINE.  \cite{WarGames}
+
+
+
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix  % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
+
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
+
+
+\appendices
+\section{Proof of the First Zonklar Equation}
+\blindtext
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+
+
+The authors would like to thank...
+
+\section*{Author}
+\parpic{\includegraphics[width=1in,clip,keepaspectratio]{pablobertorello.jpg}}
+\noindent {\bf Pablo Rodriguez Bertorello} is the most famous author in her field. She is particularly interested in X and Y, and also dabbles in Z.
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manuAllies copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\begin{thebibliography}{1}
+
+\bibitem{NorvigAI}
+P.~Norvig et al., \emph{Artificial Intelligence: A Modern Approach}, Prentice Hall, 2015.
+
+\bibitem{MykelDAU}
+M.J.~Kochenderfer et al., \emph{Decision Making Under Uncertainty}, MIT Press, 2015.
+
+\bibitem{ReinforcedStateOfArt}
+M.~Wiering et al., \emph{Reinforcement Learning: State of the Art}, Springer, 2012.
+
+\bibitem{MasteringGo}
+D.~Silver et al., \emph{Mastering the game of Go without human knowledge}, 2017.
+
+\bibitem{GamingArcade}
+MG.~Bellemare et al., \emph{The Arcade Gaming Environment: An Evaluation Platform for General Agents}, 2013.
+
+\bibitem{OpenAIGym}
+J.~Francis et al., \emph{Reinforcement Learning and OpenAI Gym}, Safari Books, 2017.
+
+\bibitem{WarGames}
+J.~Badham et al., \emph{War Games}, 1983.
+
+\end{thebibliography}
+
+
+% biography section
+%
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{John Doe}
+\blindtext
+\end{IEEEbiography}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+% that's all folks
+\end{document}
+
