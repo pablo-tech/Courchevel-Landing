@@ -4,13 +4,6 @@
 ### Team Members: 
 - Pablo Rodriguez Bertorello, Computer Science, Stanford University 
 
-### Summary
-To ease the development of streaming Reinforcement Learning algorithms, the Courchevel environment is published.  
-
-A simple transformation is added to the Bellman equation, a principal pillar of AI, particularly for solving Markov Decision Problems.
-
-![picture](img/courchevel-landing.png)
-
 ### Excerpt
 
 ##### GREETINGS PROFESSOR FALKEN.
@@ -34,6 +27,15 @@ A simple transformation is added to the Bellman equation, a principal pillar of 
 ##### Later.  Let's play Global Thermonuclear War.
 
 ##### FINE.
+
+
+### Summary
+To ease the development of streaming Reinforcement Learning algorithms, the Courchevel environment is published.  
+
+A simple transformation is added to the Bellman equation, a principal pillar of AI, particularly for solving Markov Decision Problems.
+
+![picture](img/courchevel-landing.png)
+
 
 
 ### Report
