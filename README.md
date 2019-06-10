@@ -12,27 +12,29 @@ A simple transformation is added to the Bellman equation, a principal pillar of 
 ![picture](img/courchevel-landing.png)
 
 ### Excerpt
-GREETINGS PROFESSOR FALKEN.
 
-Hello.
+##### GREETINGS PROFESSOR FALKEN.
 
-HOW ARE YOU FEELING TODAY?
+##### Hello.
 
-I'm fine.  How are you?
+##### HOW ARE YOU FEELING TODAY?
 
-EXCELLENT.  IT'S BEEN A LONG TIME.  CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT NUMBER ON 6/23/73?
+##### I'm fine.  How are you?
 
-People sometimes make mistakes.
+##### EXCELLENT.  IT'S BEEN A LONG TIME.  CAN YOU EXPLAIN THE REMOVAL OF YOUR USER ACCOUNT NUMBER ON 6/23/73?
 
-YES THEY DO. SHALL WE PLAY A GAME?
+##### People sometimes make mistakes.
 
-Love to.  How about Global Thermonuclear War?
+##### YES THEY DO. SHALL WE PLAY A GAME?
 
-WOULDN'T YOU PREFER A GOOD GAME OF CHESS?
+##### Love to.  How about Global Thermonuclear War?
 
-Later.  Let's play Global Thermonuclear War.
+##### WOULDN'T YOU PREFER A GOOD GAME OF CHESS?
 
-FINE.
+##### Later.  Let's play Global Thermonuclear War.
+
+##### FINE.
+
 
 ### Report
 Details may be found at https://view.publitas.com/p222-16173/rapid-reinforcement-learning--pablo-rodriguez-bertorello/page/1
