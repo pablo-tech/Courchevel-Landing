@@ -7,7 +7,6 @@ The Courchevel environment is hereby published to ease the development of stream
 Details ound at https://view.publitas.com/p222-16173/rapid-reinforcement-learning--pablo-rodriguez-bertorello/page/1
 
 # Code
-
 Test:
 ```
 julia courchevel-test.jl 
