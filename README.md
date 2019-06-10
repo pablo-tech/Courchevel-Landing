@@ -34,7 +34,7 @@ To ease the development of streaming Reinforcement Learning algorithms, the Cour
 
 A simple transformation is added to the Bellman equation, a principal pillar of AI, particularly for solving Markov Decision Problems.
 
-![picture](img/courchevel-landing.png=250x)
+![picture](img/courchevel-landing.png =250x)
 
 
 
