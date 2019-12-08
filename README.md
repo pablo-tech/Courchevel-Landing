@@ -34,12 +34,16 @@ To ease the development of streaming Reinforcement Learning algorithms, the Cour
 
 A simple transformation is added to the Bellman equation, a principal pillar of AI, particularly for solving Markov Decision Problems.
 
-![picture](img/courchevel-landing.png){:height="200px" width="200px"}
+![picture](img/courchevel-landing.png)
 
 
 
 ### Report
 Details may be found at https://view.publitas.com/p222-16173/rapid-reinforcement-learning--pablo-rodriguez-bertorello/page/1
+
+
+### Abstract
+The Courchevel environment is hereby published to ease the development of streaming machine learning algorithms. In first solving this problem, a rapid reinforcement learning algorithm was invented.  A simple transformation is added to the Bellman equation, a principal pillar of AI, particularly for solving Markov Decision Problems. By adding stochasticity to Bellman, sustained Reward-Per-Episode gains of an order of magnitude are validated, for environments where the reward function is structurally anticipated to be multi-modal. Courchevel as a decision problem, a first solution, and the Biased Bellman innovation are revealed -- with accompanying data.  For ease of discussion, Courchevel's dynamics are described in military terms.
 
 
 ### Code
